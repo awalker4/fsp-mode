@@ -99,7 +99,7 @@
     ("@(.*)" . 'font-lock-preprocessor-face)
     ("#(.*)" . 'font-lock-preprocessor-face)
     )
-  '("\\.fsp\\'") ;; filename suffixes
+  '("\\.fsp\\'" "\\.lts\\'") ;; filename suffixes
   '( ;; env setup
     (lambda () 
       (make-local-variable 'fsp-indent-offset)
