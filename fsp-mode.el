@@ -125,6 +125,13 @@
             (message "Buffer copied to clipboard")
             )
           )
+        ;; Hard code this for now
+        (define-key fsp-mode-map (kbd "C-c l")
+          (lambda () (interactive)
+            (start-process-shell-command "LTSA" "LTSATOOL" "java" "-jar"
+  "~/Dropbox/fsp-mode/ltsatool/ltsa.jar" buffer-file-name)
+            )
+          )
         )
       (use-local-map fsp-mode-map)
       ))
