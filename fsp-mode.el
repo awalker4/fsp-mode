@@ -38,7 +38,6 @@
 
 
 ;;(autoload 'fsp-mode "ABSOLUTE-DIRECTORY-OF-THE-FILE/fsp-mode.el")
-;;(add-to-list 'auto-mode-alist '("\\.fsp$" . fsp-mode))
 
 ;; FEATURES
 ;; * indentation
